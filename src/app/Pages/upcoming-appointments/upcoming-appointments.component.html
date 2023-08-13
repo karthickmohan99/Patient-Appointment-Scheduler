@@ -1,0 +1,14 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Upcoming Appointments</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <ul *ngIf="upcomingAppointments.length > 0">
+        <li *ngFor="let appointment of upcomingAppointments">
+          {{  appointment.startTime | date: 'MMM d, y - h:mm a' }} - {{ appointment.doctor }}
+        </li>
+      </ul>
+      <p *ngIf="upcomingAppointments.length === 0">No upcoming appointments.</p>
+    </mat-card-content>
+  </mat-card>
+  

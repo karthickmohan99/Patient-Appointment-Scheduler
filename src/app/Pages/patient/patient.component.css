@@ -1,0 +1,15 @@
+
+.time-slots-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust the gap as needed */
+  }
+
+  .time-slot-card {
+    flex: 1; /* Distribute available space equally among cards */
+    max-width: 200px; /* Adjust the maximum width of each card */
+  }
+
+  .upcomming-appintment{
+    margin-top: 10px;
+  }

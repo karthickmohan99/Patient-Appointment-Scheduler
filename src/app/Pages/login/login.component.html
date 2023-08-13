@@ -1,0 +1,32 @@
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="vertical-loginform">
+    <h1 class="text-center text-uppercase">Login</h1>
+    
+  
+    <mat-form-field class="form-field">
+      <mat-label>Mobile Number</mat-label>
+      <input matInput type="tel" formControlName="mobileNumber" required>
+      <mat-error *ngIf="loginForm.get('mobileNumber')?.hasError('required')">Mobile number is required</mat-error>
+  <mat-error *ngIf="loginForm.get('mobileNumber')?.hasError('pattern')">Please enter a valid 10-digit mobile number</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field class="form-field">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password" required>
+      <mat-error *ngIf="loginForm.get('password')?.hasError('pattern')">Passwords do not match.</mat-error>
+      <mat-error *ngIf="loginForm.value.password">Password must be a combination of lower-case, upper-case, numbers and at least 9 characters long</mat-error>
+    </mat-form-field>
+  
+    
+    <button mat-raised-button color="primary" type="submit" >Login</button>
+    
+        <button
+          type="submit"
+  
+          [routerLink]="['/register']"
+          class="btn btn-warning btn-block  login-btn mx-2"
+        >
+          Register
+        </button>
+  </form>
+  

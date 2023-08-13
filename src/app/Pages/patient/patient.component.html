@@ -1,0 +1,26 @@
+
+<h2>Available Slots</h2>
+<div class="time-slots-container">
+  
+<div *ngFor="let timeSlot of availableTimeSlots" class="time-slot-card">
+  <mat-card>
+   
+    <mat-card-content>
+      <h3>{{ timeSlot.startTime | date: 'medium' }}</h3>
+
+      <p>Doctor: {{ timeSlot.doctor.name }}</p>
+      <mat-form-field style="width: 175px;">
+        <input matInput placeholder="Patient Name" [(ngModel)]="patientNames[timeSlot.id]">
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="bookAppointment(timeSlot, patientNames[timeSlot.id])">Book Your Slot</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+
+</div>
+<div class="upcomming-appintment">
+  <app-upcoming-appointments></app-upcoming-appointments>
+</div>

@@ -1,0 +1,14 @@
+.vertical-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width:100%;
+
+    max-width: 400px; 
+  margin: 0 auto; 
+  }
+
+  .form-field{
+    width: 80%;
+  }

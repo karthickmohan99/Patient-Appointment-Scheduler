@@ -1,5 +1,64 @@
 # PatientAppointmentScheduler
 
+# Running My Angular Application 
+
+## Prerequisites
+Before you begin, make sure you have the following prerequisites installed:
+
+### 1. Install Node
+Node.js is required to run the Angular application. You can download and install Node.js from the official website: [Node.js Downloads](https://nodejs.org/en/download/)
+
+### 2. Install npm
+npm (Node Package Manager) comes bundled with Node.js. To verify that npm is properly installed, you can check the installed version by running the following command in your terminal:
+```sh
+npm -v
+
+### 3. Install the Angular CLI
+The Angular CLI (Command Line Interface) is used to manage and develop Angular applications. Install it globally on your system using the following npm command:
+
+`npm install -g @angular/cli`
+
+## Setup and Run the Application
+
+### Clone the Repository
+Clone the repository containing the Angular application code to your local machine:
+
+`git clone <repository_url>
+cd <repository_directory>`
+
+### Install Dependencies
+Navigate to the root directory of the Angular application and install the required dependencies using npm:
+
+`npm install`
+
+## Run the Application
+After the installation is complete, use the Angular CLI to run the application locally:
+
+`ng serve`
+
+This command will compile and serve the application. Access it in a web browser by navigating to http://localhost:4200/.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
 
 ## Development server
