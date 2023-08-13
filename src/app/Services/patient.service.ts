@@ -10,17 +10,17 @@ private baseUrl='localhost:8081'
   constructor(private http:HttpClient) { }
 
   getAvailableTimeSlots(): Observable<any> {
-    //const endpoint = '/api/time-slots/available'; 
+    
     const url ='http://localhost:8081/api/time-slots/available'
-    //return this.http.get(`${this.baseUrl}${endpoint}`);
+   
     return this.http.get(url);
   }
 
   bookAppointment(doctorName:string,startTime:Date,patientName:string): Observable<any> {
-    //const url = `${this.baseUrl}/api/appointments`; // Replace with the actual endpoint to book appointments
-        const url = 'http://localhost:8081/api/appointments'; // Use 'http://' protocol
+   
+        const url = 'http://localhost:8081/api/appointments';
 
-    // You can customize the payload and headers as needed
+    
     const payload = { 
       doctor_name:doctorName,
       startTime:startTime,

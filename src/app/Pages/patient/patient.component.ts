@@ -40,7 +40,7 @@ export class PatientComponent implements OnInit{
         this.sharedService.updateUpcomingAppointments(response);
          
       })
-      //display dialogue
+      // dialogue
     this.dialog.open(ConfirmationDialogComponent,{
         data:{
           doctorName: timeSlot.doctor.name,
